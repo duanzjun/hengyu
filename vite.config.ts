@@ -13,5 +13,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: './hydist/'
+  build: {
+    chunkSizeWarningLimit: 10000
+  }
 })

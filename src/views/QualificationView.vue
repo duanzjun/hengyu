@@ -38,6 +38,13 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import YYZZ from '../assets/imgs/yyzz.png'
+import CHZZZS from '../assets/imgs/chzzzs.png'
+import HKQYJY from '../assets/imgs/hkqyjy.png'
+import HKJYXKZ from '../assets/imgs/hkjyxkz.png'
+import TXRZ01 from '../assets/imgs/txrz01.png'
+import TXRZ02 from '../assets/imgs/txrz02.png'
+import TXRZ03 from '../assets/imgs/txrz03.png'
 
 const iv = ref({
     index: 0,
@@ -46,18 +53,16 @@ const iv = ref({
 })
 
 const img01 = [
-    'src/assets/imgs/yyzz.png',
-    'src/assets/imgs/chzzzs.png',
+YYZZ,
+CHZZZS,
 
 ]
 const img02 = [
-    'src/assets/imgs/hkqyjy.png',
-    'src/assets/imgs/hkjyxkz.png',
+HKQYJY,
+HKJYXKZ,
 ]
 const img03 = [
-    'src/assets/imgs/txrz01.png',
-    'src/assets/imgs/txrz02.png',
-    'src/assets/imgs/txrz03.png',
+TXRZ01,TXRZ02,TXRZ03
 ]
 const handlePreviewImg = (images: String[], index: number) => {
     iv.value.visible = true
