@@ -9,11 +9,13 @@ import router from './router'
 
 import './assets/base.css'
 import 'tdesign-mobile-vue/es/style/index.css'
+import Tmap from '@map-component/vue-tmap'
 
 const app = createApp(App)
 
 app.use(TDesign)
 app.use(createPinia())
 app.use(router)
+app.use(Tmap)
 
 app.mount('#app')

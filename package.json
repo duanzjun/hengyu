@@ -10,6 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "@map-component/vue-tmap": "^1.0.1",
     "pinia": "^2.1.6",
     "tdesign-mobile-vue": "^1.0.4",
     "vue": "^3.3.4",

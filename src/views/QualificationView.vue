@@ -16,7 +16,7 @@
                 </div>
             </t-tab-panel>
             <t-tab-panel value="second">
-                <template #label>许可证书</template>
+                <template #label>资质证书</template>
                 <div class="image-item" v-for="(item, index) in img02">
                     <t-image :style="{ width: '100%' }" fit="fill" :src="item" shape="round"
                         @click="handlePreviewImg(img02, index)"></t-image>
@@ -54,10 +54,9 @@ const iv = ref({
 
 const img01 = [
 YYZZ,
-CHZZZS,
-
 ]
 const img02 = [
+CHZZZS,
 HKQYJY,
 HKJYXKZ,
 ]
