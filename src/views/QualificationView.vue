@@ -29,6 +29,13 @@
                         @click="handlePreviewImg(img03, index)"></t-image>
                 </div>
             </t-tab-panel>
+            <t-tab-panel value="four">
+                <template #label>专利证书</template>
+                <div class="image-item" v-for="(item, index) in img04">
+                    <t-image :style="{ width: '100%' }" fit="fill" :src="item" shape="round"
+                        @click="handlePreviewImg(img04, index)"></t-image>
+                </div>
+            </t-tab-panel>
         </t-tabs>
 
 
@@ -42,9 +49,13 @@ import YYZZ from '../assets/imgs/yyzz.png'
 import CHZZZS from '../assets/imgs/chzzzs.png'
 import HKQYJY from '../assets/imgs/hkqyjy.png'
 import HKJYXKZ from '../assets/imgs/hkjyxkz.png'
-import TXRZ01 from '../assets/imgs/txrz01.png'
-import TXRZ02 from '../assets/imgs/txrz02.png'
-import TXRZ03 from '../assets/imgs/txrz03.png'
+import TXRZ01 from '../assets/imgs/txrz01.jpg'
+import TXRZ02 from '../assets/imgs/txrz02.jpg'
+import TXRZ03 from '../assets/imgs/txrz03.jpg'
+import ZL01 from '../assets/imgs/zl01.jpg'
+import ZL02 from '../assets/imgs/zl02.jpg'
+import ZL03 from '../assets/imgs/zl03.jpg'
+import ZL04 from '../assets/imgs/zl04.jpg'
 
 const iv = ref({
     index: 0,
@@ -53,20 +64,24 @@ const iv = ref({
 })
 
 const img01 = [
-YYZZ,
+    YYZZ,
 ]
 const img02 = [
-CHZZZS,
-HKQYJY,
-HKJYXKZ,
+    CHZZZS,
+    HKQYJY,
+    HKJYXKZ,
 ]
 const img03 = [
-TXRZ01,TXRZ02,TXRZ03
+    TXRZ01, TXRZ02, TXRZ03
 ]
+const img04 = [
+    ZL01, ZL02, ZL03, ZL04
+]
+
 const handlePreviewImg = (images: String[], index: number) => {
     iv.value.visible = true
     iv.value.index = index
-    iv.value.images= images
+    iv.value.images = images
 }
 </script>
 
