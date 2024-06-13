@@ -15,6 +15,13 @@
                         @click="handlePreviewImg(img01, index)"></t-image>
                 </div>
             </t-tab-panel>
+            <t-tab-panel value="five">
+                <template #label>高新技术</template>
+                <div class="image-item" v-for="(item, index) in img05">
+                    <t-image :style="{ width: '100%' }" fit="fill" :src="item" shape="round"
+                        @click="handlePreviewImg(img02, index)"></t-image>
+                </div>
+            </t-tab-panel>
             <t-tab-panel value="second">
                 <template #label>资质证书</template>
                 <div class="image-item" v-for="(item, index) in img02">
@@ -56,6 +63,8 @@ import ZL01 from '../assets/imgs/zl01.jpg'
 import ZL02 from '../assets/imgs/zl02.jpg'
 import ZL03 from '../assets/imgs/zl03.jpg'
 import ZL04 from '../assets/imgs/zl04.jpg'
+import ZL05 from '../assets/imgs/zl05.jpg'
+import GXJS from '../assets/imgs/gxjs01.jpg'
 
 const iv = ref({
     index: 0,
@@ -75,8 +84,9 @@ const img03 = [
     TXRZ01, TXRZ02, TXRZ03
 ]
 const img04 = [
-    ZL01, ZL02, ZL03, ZL04
+    ZL01, ZL02, ZL03, ZL04, ZL05
 ]
+const img05 = [GXJS]
 
 const handlePreviewImg = (images: String[], index: number) => {
     iv.value.visible = true
